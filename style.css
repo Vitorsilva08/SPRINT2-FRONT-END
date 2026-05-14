@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    background-color: #1e1e1e;
+    background-color: #603ac9;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .header-topico-1 {
@@ -66,34 +66,25 @@ header {
 }
 
 .titulo {
-    padding: 20px;
-    margin: 0 20px;
-    font-size: 40px;
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
 }
 
-.separador {
-    background-color: #1e1e1e;
-    text-align: center;
-    padding: 15px 0;
-}
 
-.cloudcore img {
-    margin-top: 20px;
-    width: 30%;
-    height: 150px;
-    object-fit: contain;
-}
 
-.container {
+
+.logo {
     display: flex;
     justify-content: center;
+    flex-direction:row;
 }
 
-.empresas img {
-    width: 25%;
+.logo img {
+    width: 50%;
     height: 150px;
     object-fit: contain;
 }
@@ -127,7 +118,7 @@ midia-card {
     border-radius: 20px;
 }
 .ilustracao img {
-    width: 45%;         
+    width: auto;         
     height: 350px;       
     object-fit: cover; 
     border-radius: 10px; 
@@ -159,3 +150,29 @@ p1 {
     font-size: 20px;
     margin-bottom: 50px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    display: flex;
+    
+}
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
+ul.sticky {
+    position: sticky;
+    top: 0;
+    padding:5px;
+}
+
