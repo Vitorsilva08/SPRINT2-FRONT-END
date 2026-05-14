@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+    font-family: "Oswald", sans-serif;
+}
+
+header {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-topico-1 {
+    background-color: #603ac9;
+    width: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: 900px;
+    padding: 1px 0;
+    border-radius: 15px;
+}
+
+.header-topico-2 {
+    background-color: #603ac9;
+    width: auto;
+    margin: auto;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 1300px;
+    padding: 1px 0;
+    border-radius: 15px;
+}
+
+.header-topico-3 {
+    background-color: #603ac9;
+    width: auto;
+    margin: auto;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 1250px;
+    padding: 1px 0;
+    border-radius: 15px;
+}
+
+.header-reduzido {
+    width: auto;
+    margin-left: 750px;
+    margin-right: 750px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+.pagina {
+    font-family: Roboto, Calibri;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f7f5f5;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.titulo {
+    padding: 20px;
+    margin: 0 20px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.separador {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.cloudcore img {
+    margin-top: 20px;
+    width: 30%;
+    height: 150px;
+    object-fit: contain;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.empresas img {
+    width: 25%;
+    height: 150px;
+    object-fit: contain;
+}
+
+div {
+    text-align: center;
+}
+
+.interface img {
+    width: 50%;
+    height: 600px;
+    object-fit: cover;  
+    margin-bottom: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+
+.ilustracao img {
+    width: 45%;         
+    height: 350px;       
+    object-fit: cover; 
+    border-radius: 10px; 
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 27px;
+    color: #f9fafa;
+    margin: 10px 10px 10px 10px;
+}
+
+p {
+    font-size: 22px;
+    margin: 20px 40px 20px 40px;
+    margin-bottom: 30px;
+}
+
+p1 {
+    margin-top: 25px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
