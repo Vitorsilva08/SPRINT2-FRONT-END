@@ -185,3 +185,9 @@ ul.sticky {
     padding:5px;
 }
 
+.containerIntro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
