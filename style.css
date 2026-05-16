@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: boder-box;
+    box-sizing: border-box;
     font-family: "Oswald", sans-serif;
 }
 
@@ -17,19 +17,12 @@ header {
 }
 
 .header-topico {
-    /*background-color: #0400ff !important; 
-    width: fit-content;   
-    margin-left: 70px;  
-    padding: 5px 20px;     
-    border-radius: 15px;
-    text-align: left; */
-
     background-color:#1e1e1e;
     width:auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0 auto 20px;
     padding: 10px 20px;
     border-radius: 20px;
     font-family: sans-serif;
@@ -113,20 +106,16 @@ div {
    align-items: center;
    padding: 40px;
 }
-midia-card {
-    display: flex;
-}
+
 .midia-card img{
     width: 100%;
     height: 420px;
-
     object-fit: cover;
     border-radius: 20px;
 }
 .midia-card video {
     width: 100%;
     height: 420px;
-
     object-fit: cover;
     border-radius: 20px;
 }
@@ -149,12 +138,18 @@ h1 {
 h2 {
     font-size: 27px;
     color: #f9fafa;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+.topicos {
+    font-size: 27px;
+    color: #f9fafa;
+    margin: 10px;
 }
 
 p {
     font-size: 22px;
-    margin: 20px 40px 20px 40px;
+    margin: 20px 40px;
     margin-bottom: 30px;
     background-color:#252f53;
     border-radius: 20px;
@@ -163,16 +158,10 @@ p {
 
 .apresentacao {
     font-size: 22px;
-    margin: 0    70px;
+    margin: 0 70px;
     text-align: justify;
     font-family: sans-serif;
     color: #f7f5f5;
-}
-
-p1 {
-    margin-top: 25px;
-    font-size: 20px;
-    margin-bottom: 50px;
 }
 
 ul {
@@ -181,7 +170,6 @@ ul {
     padding: 0;
     background-color: #1e1e1e;
     display: flex;
-    
 }
 ul li a {
   display: block;
@@ -198,6 +186,7 @@ ul.sticky {
     position: sticky;
     top: 0;
     padding:5px;
+    z-index: 1000;
 }
 
 .containerIntro {
@@ -209,53 +198,11 @@ ul.sticky {
     color: #f7f5f5;
 }
 
-/* Correção sutil no escopo global para garantir consistência de box-sizing */
 * {
     box-sizing: border-box;
 }
 
-/* Container de isolamento da tela de login */
-.login-wrapper {
-    background-color: #f4f6fc; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-}
-
-/* Card centralizado */
-.login-card {
-    background-color: #f7f9fc;
-    width: 100%;
-    max-width: 440px;
-    padding: 40px 30px;
-    border-radius: 16px;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    text-align: left !important; 
-}
-
-/* Títulos e Subtítulos internos do card */
-.login-title {
-    font-size: 28px !important;
-    color: #1e293b !important;
-    font-weight: 700;
-    text-align: center;
-    margin: 0 0 10px 0 !important;
-}
-
-.login-subtitle {
-    font-size: 15px !important;
-    color: #64748b !important;
-    background-color: transparent !important; 
-    border-radius: 0 !important;
-    padding: 0 !important;
-    margin: 0 0 30px 0 !important;
-    text-align: center;
-}
-
-/* Formulário e campos */
+/* Modal e Card estilizados para herdar propriedades limpas */
 .login-form {
     display: flex;
     flex-direction: column;
@@ -281,9 +228,9 @@ ul.sticky {
     align-items: center;
 }
 
-/* Inputs de texto e senha */
 .login-field-group input[type="email"],
-.login-password-wrapper input[type="password"] {
+.login-password-wrapper input[type="password"],
+.login-password-wrapper input[type="text"] {
     width: 100%;
     padding: 14px 16px;
     border: 1px solid #cbd5e1;
@@ -296,15 +243,16 @@ ul.sticky {
 }
 
 .login-field-group input[type="email"]:focus,
-.login-password-wrapper input[type="password"]:focus {
+.login-password-wrapper input[type="password"]:focus,
+.login-password-wrapper input[type="text"]:focus {
     border-color: #0652dd;
 }
 
-/* Container da senha */
 .login-password-wrapper {
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .login-toggle-password {
@@ -314,9 +262,9 @@ ul.sticky {
     color: #64748b;
     font-size: 18px;
     user-select: none;
+    z-index: 10;
 }
 
-/* Links */
 .login-forgot-link {
     font-size: 13px;
     color: #0652dd;
@@ -328,7 +276,6 @@ ul.sticky {
     text-decoration: underline;
 }
 
-/* Checkbox Lembrar-me */
 .login-remember-group {
     display: flex;
     align-items: center;
@@ -351,7 +298,6 @@ ul.sticky {
     user-select: none;
 }
 
-/* Botão Entrar principal */
 .login-btn-submit {
     width: 100%;
     background-color: #0652dd; 
@@ -377,7 +323,6 @@ ul.sticky {
     font-size: 18px;
 }
 
-/* Rodapé "Não tem uma conta? Cadastre-se" */
 .login-footer-text {
     font-size: 14px !important;
     color: #475569 !important;
@@ -388,12 +333,7 @@ ul.sticky {
     margin: 25px 0 0 0 !important;
 }
 
-.login-signup-link {
-    color: #0652dd;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-.login-signup-link:hover {
-    text-decoration: underline;
-}
+/* Classes utilitárias dinâmicas */
+.d-none { display: none !important; }
+.alert-danger { background-color: #fee2e2; color: #991b1b; border: 1px solid #fca5a5; }
+.alert-success { background-color: #dcfce7; color: #166534; border: 1px solid #86efac; }
